@@ -1,0 +1,29 @@
+HELLO-NIGHTMARE
+---------------
+
+HOW TO BUILD
+
+  $ ./autogen.sh
+  $ ./configure
+  $ make
+  # make install
+
+HOW TO CLEAN
+
+  $ make clean (for binary only)
+  or
+  $ make distclean (for all generated files)
+
+HOW TO REMOVE
+
+  # make uninstall
+
+LICENSE
+
+This program is under WTFPL license.
+Alternatively, you can use the BSD license.
+
+------- IGNORE WHEN PACKAGING -------------------
+
+PS: this code can have some problems and was developed to help in Debian
+    packaging lessons. Please, don't open bugs against this project.

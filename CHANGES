@@ -1,0 +1,7 @@
+v1.150-beta1  2019-08-25
+
+    * Using LDFLAGS to improve performance.
+
+v1.0  2018-09-11
+
+    * Initial release.
