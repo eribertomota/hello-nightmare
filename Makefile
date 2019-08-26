@@ -1,7 +1,8 @@
 # Makefile for hello-nightmare
-# by Eriberto, 2018
+# by Eriberto, 2018-2019
 
 CC = gcc
+LDFLAGS = -DNONE
 PREFIX = /usr/local
 
 all: hello-nightmare
