@@ -3,7 +3,6 @@
 
 CC = gcc
 LDFLAGS = -DNONE
-PREFIX = /usr/local
 
 all: hello-nightmare
 
