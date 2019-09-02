@@ -12,17 +12,17 @@ hello-nightmare:
 
 install:
 #	[ -e hello-nightmare ] || $(error ERROR: run `make' before run `install')
-#	[ -e $(PREFIX)/bin/hello-nightmare ] && $(error ERROR: hello-nightmare already installed)
-	cp hello-nightmare $(PREFIX)/bin
-	cp hello-nightmare.1 $(PREFIX)/share/man/man1
-	install -D -m 755 engine $(PREFIX)/share/hello-nightmare/engine
-	cp COPYING $(PREFIX)/share/hello-nightmare/COPYING
+#	[ -e /usr/bin/hello-nightmare ] && $(error ERROR: hello-nightmare already installed)
+	cp hello-nightmare /usr/bin
+	cp hello-nightmare.1 /usr/share/man/man1
+	install -D -m 755 engine /usr/share/hello-nightmare/engine
+	cp COPYING /usr/share/hello-nightmare/COPYING
 
 uninstall:
-#	[ -e $(PREFIX)/bin/hello-nightmare ] || $(error ERROR: hello-nightmare is not installed)
-	rm -f  $(PREFIX)/bin/hello-nightmare
-	rm -f  $(PREFIX)/share/man/man1/hello-nightmare.1
-	rm -rf $(PREFIX)/share/hello-nightmare/
+#	[ -e /usr/bin/hello-nightmare ] || $(error ERROR: hello-nightmare is not installed)
+	rm -f  /usr/bin/hello-nightmare
+	rm -f  /usr/share/man/man1/hello-nightmare.1
+	rm -rf /usr/share/hello-nightmare/
 
 clean:
 	rm -f hello-nightmare
