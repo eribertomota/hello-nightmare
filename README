@@ -1,22 +1,13 @@
 HELLO-NIGHTMARE
 ---------------
 
-HOW TO BUILD
+HOW TO BUILD AND INSTALL
 
-  $ ./autogen.sh
-  $ ./configure
-  $ make
-  # make install
-
-HOW TO CLEAN
-
-  $ make clean (for binary only)
-  or
-  $ make distclean (for all generated files)
-
-HOW TO REMOVE
-
-  # make uninstall
+  $ gcc -DNONE hello-nightmare.c -o hello-nightmare
+  # mkdir /usr/share/hello-nightmare/
+  # cp hello-nightmare /usr/bin
+  # cp engine /usr/share/hello-nightmare/
+  # chmod 755 /usr/share/hello-nightmare/engine
 
 LICENSE
 

@@ -1,0 +1,4 @@
+I don't like autotools!
+
+So, I removed all autotools resources from this program since 1.5 version.
+How to build it? Check the new README file.
