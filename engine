@@ -19,13 +19,14 @@
 # ----> IF YOU NEED, YOU CAN USE THIS PROGRAM UNDER BSD LICENSE.
 # --------------------------------------------------------------
 
-VERSION=1.0
+VERSION=1.5
 
 function help() {
     echo -e "\nHello Nightmare $VERSION"
     echo -e "\nUsage:"
     echo -e "\t-1 Show message number 1."
     echo -e "\t-2 Show message number 2."
+    echo -e "\t-3 Show message number 3."
     echo -e "\t-h Show this help."
     echo -e "\t-v Show version."
     exit 1
@@ -34,6 +35,8 @@ function help() {
 [ "$1" = "-1" ] && { echo -e "\nI am your nightmare!"; exit 0; }
 
 [ "$1" = "-2" ] && { echo -e "\n\033[0;31mI am \033[0;32myour \033[0;33mworst \033[1;33mnightmare!\033[0m"; exit 0; }
+
+[ "$1" = "-3" ] && { figlet "I am your nightmare!"; exit 0; }
 
 [ "$1" = "-v" ] && { echo "Hello Nightmare $VERSION"; exit 1; }
 
