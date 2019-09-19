@@ -17,6 +17,7 @@ install:
 	cp hello-nightmare.1 /usr/share/man/man1
 	install -D -m 755 engine /usr/share/hello-nightmare/engine
 	cp COPYING /usr/share/hello-nightmare/COPYING
+	cp -a docs docs2 /usr/share/hello-nightmare/
 
 uninstall:
 #	[ -e /usr/bin/hello-nightmare ] || $(error ERROR: hello-nightmare is not installed)
