@@ -3,11 +3,8 @@ HELLO-NIGHTMARE
 
 HOW TO BUILD AND INSTALL
 
-  $ gcc -DNONE hello-nightmare.c -o hello-nightmare
-  # mkdir /usr/share/hello-nightmare/
-  # cp hello-nightmare /usr/bin
-  # cp engine /usr/share/hello-nightmare/
-  # chmod 755 /usr/share/hello-nightmare/engine
+  $ make
+  # make install
 
 LICENSE
 
